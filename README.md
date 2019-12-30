@@ -1,2 +1,2 @@
 # store-contacts
-Store Contacts
+Manage Contact app built with MERN stack
