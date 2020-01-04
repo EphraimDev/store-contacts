@@ -2,6 +2,7 @@ import {
   ADD_CONTACT,
   DELETE_CONTACT,
   UPDATE_CONTACT,
+  CONTACT_ERROR,
   SET_CURRENT,
   CLEAR_CURRENT,
   FILTER_CONTACTS,
@@ -51,6 +52,11 @@ export default (state, action) => {
       return {
         ...state,
         filtered: null
+      };
+    case CONTACT_ERROR:
+      return {
+        ...state,
+        error: action.payload
       };
     default:
       return state;
